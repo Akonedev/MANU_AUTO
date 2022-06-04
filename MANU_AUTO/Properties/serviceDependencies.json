@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:MANU_AUTO_IdentityContextConnection"
+    }
+  }
+}
