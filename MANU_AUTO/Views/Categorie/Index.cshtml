@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using PagedList.Mvc;
+@using PagedList;
+@using MANU_AUTO.Models;
+
+@inject SignInManager<IdentityUser> SignInManager
+
+@model PagedList.IPagedList<MANU_AUTO.Models.Categorie>
+
+@{
+    ViewData["Title"] = "Liste des catégories";
+}
+
+<main class="main-block">
+    <div class="bg_header" style="background-position:center ;background-image:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_L_2020.jpg);--bg-s:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_S_2020.jpg);--bg-m:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_M_2020.jpg);--bg-l:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_L_2020.jpg)">
+        <h1 class="header_title">Catégories</h1>
+    </div>
+
+    @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+    {
+        <p><a asp-action="Create" class="btn btn-primary mt-3">Ajouter une nouvelle catégorie</a></p>
+    }
+    @if (Model.Count() > 0)
+    {
+        <div class="container">
+            <div class="row" id="line-label-cat">
+                <div class="col-sm-6 mb-3 text-uppercase">@Html.Label("Libellé")</div>
+                <div class="col-sm-6"></div>
+            </div>
+
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="row">
+                    <div class="col-sm-6" id="labelCat">
+                        @Model[i].Label
+                    </div>
+                    @*  @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+            {*@
+                    <div class="col-sm-6">
+                        <nav class="navigation">
+                            <a class="navlink" asp-action="Details" asp-route-id="@Model[i].Id">Afficher</a>
+                            @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                            {
+                                <a class="navlink" asp-action="Edit" asp-route-id="@Model[i].Id">Modifier</a>
+                                <a class="navlink" asp-action="Delete" asp-route-id="@Model[i].Id">Supprimer</a>
+                            }
+                        </nav>
+                    </div>
+                    @* }*@
+                </div>
+            }
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col" id="navigation">
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        @if (i != Model.PageNumber)
+                        {
+                            <a asp-action="Index" asp-route-id="@i">@i</a>
+                        }
+                        else
+                        {
+                            <span>@i</span>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</main>

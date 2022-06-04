@@ -1,0 +1,279 @@
+﻿/*
+html {
+    font-size: 14px;
+}
+*/
+/*@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}*/
+/*
+html {
+    position: relative;
+    min-height: 100%;
+}*/
+
+/*body {
+    margin-bottom: 60px;
+}
+*/
+/*.grid {
+    display: flex;
+}
+
+.img-thumbnail {
+    flex-wrap: wrap;
+    height: 200px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    gap: 20px;
+}
+
+.categoryListCell {*/
+    /*gap: 20px;*/
+
+    /*margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.h5 {
+    padding-right: 15px !important;
+}*/
+
+/*html {
+    background-color: yellow;
+}*/
+
+/*.lead2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}*/
+
+/*Tarik*/
+/*html {
+    font-size: 14px;
+}*/
+
+/*@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}*/
+/*
+html {
+    position: relative;
+    min-height: 100%;
+}*/
+
+/*body {
+    margin-bottom: 60px;
+}
+
+p {
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #190f33;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #190f33;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}*/
+
+/*.bg_header {
+    height: 200px;*/
+    /*background-image:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_L_2020.jpg);*/
+/*}*/
+
+/*.image-prinipale {
+    height: 400px;
+    width: 1024px;
+    object-fit: cover;
+}*/
+
+/*.header_title {
+    color: #000f;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Verdana;
+}*/
+
+/*.main-block {*/
+    /*border: 1px solid black;*/
+    /*width: 1024px;
+    background-color: #F5F4F3;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;*/ /*permets d'afficher le bord arrondi inférieur du block main en empêchant le contenu de dépasser du block*/
+/*}*/
+
+/*.navigation {
+    display: flex;
+}
+*/
+/*.nav-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;*/
+    /*line-height: 100px;*/ /*place au centre l'élément enfant <a> dans l'élément parent à mi-hauteur sans préciser height*/
+/*}*/
+/*
+#navigation {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}*/
+
+/*#line-label-cat {
+    font-weight: bold;
+}
+
+#labelCat {
+    font-weight: bold;
+}
+
+
+
+#line-label-cat {
+    font-weight: bold;
+}
+
+#labelCat {
+    font-weight: bold;
+}
+
+.titleEditCat {
+    text-align: center;
+}
+
+    .titleEditCat span {
+        font-style: italic;
+    }
+
+.editCatetegorie {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1024px;
+    background-image: url("https://oscaro.media/mu/layout/header/categories.jpg");
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#editLabel {
+    font-weight: bold;
+}
+
+#editinputLabel {
+    align-content: center;
+    margin-top: 10px;
+}
+
+#editBtn {
+}
+
+.editLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#line2 {
+    display: flex;
+}
+
+.detailsCatetegorie {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 1024px;
+    height: 150px;
+    background-image: url("https://oscaro.media/mu/layout/header/categories.jpg");
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.titleDetailsCat {
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+    flex-direction: column;
+}
+
+.tutovideo {
+}
+
+.div-titre-tuto {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .div-titre-tuto h3 {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: Calibri;
+    }
+
+.titretuto {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenututo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #190f33;
+    margin-top: 10px;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionsTuto {
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    justify-content: space-around;
+}*/
