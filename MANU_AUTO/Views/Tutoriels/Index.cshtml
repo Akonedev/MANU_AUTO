@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@*@model IEnumerable<MANU_AUTO.Models.Tutoriel>*@
+@model dynamic
+
+@{
+    ViewData["Title"] = "Liste des tutoriels";
+}
+
+<h1 style="text-align:center;">Liste des tutoriels</h1>
+@*@if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+{*@
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Ajouter un tutoriel</a>
+    </p>
+@*}*@
+       
+<main class="main-section">
+@foreach (Tutoriel item in @Model.Tutoriel)
+{
+    <section class="tutovideo" id="tuto">
+        <div class="div-titre-tuto">
+            <h2 class="titretuto">@item.Titre</h2>
+            <h3>@item.Dcc</h3>
+        </div>
+        <div class="video">
+            <iframe width="536" height="258" src="@item.VideoLink" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        @* @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+            {*@
+            <div class="actionsTuto">
+                <a asp-action="Edit" asp-route-id="@item.Id">Modifier</a> 
+                <a asp-action="Details" asp-route-id="@item.Id">Afficher</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+            </div>
+            @* }*@
+        </div>
+        <div class="contenu">
+            <p class="contenututo">@item.Contenu</p>
+            <p style="font-style:italic; font-weight:400">modifié le @item.Dml</p>
+        </div>
+    </section>
+}
+</main>
+
+

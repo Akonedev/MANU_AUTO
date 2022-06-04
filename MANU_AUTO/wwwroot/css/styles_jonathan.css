@@ -1,0 +1,80 @@
+form {
+    background-color: whitesmoke;
+    width: 550px;
+    border-radius: 6px;
+}
+
+form > input, form > label {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+form {
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+textarea {
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.camera >  label > img {
+    width: 200px;
+    height: auto;
+    border: 2px dashed grey;
+    border-radius: 8px;
+    /* padding: 50px; */
+    /* margin:30px 0 0 170px; */
+}
+.camera > label > img:hover {
+    background-color: green;
+}
+/* .camera > input {
+     display: none; 
+} */
+
+.save > input {
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin: 30px 0 0 500px;
+}
+.main {
+    display: flex;
+}
+
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    margin-left: 215px;
+}
+.btn-primary {
+    margin: 15px 15px 15px 200px;
+}
+
+.account {
+    margin: 10px;
+    border-radius: 6px;
+    background-color: hsl(207, 68%, 52%);
+    color: whitesmoke;
+    border-color: #ccc;
+    border: 2px solid #ccc;
+}
+
+/* video {
+    /* border: 1px solid black;
+    display: block;
+    margin: 0px 0 300px 190px;
+  } */
+.camera {
+    margin-left: 110px !important;
+}
+#file-input {
+    margin-bottom: 15px;
+}

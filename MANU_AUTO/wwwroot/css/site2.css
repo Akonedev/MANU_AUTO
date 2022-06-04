@@ -1,0 +1,64 @@
+html {
+  /* font-size: 14px;*/
+}
+
+@media (min-width: 768px) {
+    html {
+     /*   font-size: 16px;*/
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+header {
+    margin-bottom: 7em;
+}
+
+.delmodal {
+    /*background-image: linear-gradient(90deg,#33b7e2,#5e62b0,#977886);*/
+    /* background-image: linear-gradient(90deg,#33b7e2,#c6c6c9,#c9c3c5);*/
+    /*background-image: linear-gradient(90deg,#95daf1,#c7e9e0,#a5d1ff);*/
+}
+
+.mainNavBar {
+    background-color: rgb(111 189 216);
+}
+
+body {
+    /* background-image: linear-gradient(90deg,#33b7e2,#5e62b0,#dc307c);*/
+    /* background-image: linear-gradient(90deg,#33b7e2,#c6c6c9,#c9c3c5);*/
+   /* background-image: linear-gradient(90deg,#95daf1,#c7e9e0,#a5d1ff);*/
+}
+
+footer {
+    /* background-image: linear-gradient(90deg,#33b7e2,#5e62b0,#977886);*/
+    /*  background-image: linear-gradient(90deg,#33b7e2,#c6c6c9,#c9c3c5);*/
+   /* background-image: linear-gradient(90deg,#95daf1,#c7e9e0,#a5d1ff);*/
+}
+
+.mainContainer {
+    margin-top: 6em;
+}
+
+
+*::placeholder {
+    color: white;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+
+
+.nav-link:focus, .nav-link:hover {
+    color: #ff0000;
+}

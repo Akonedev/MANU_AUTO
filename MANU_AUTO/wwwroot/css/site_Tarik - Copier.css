@@ -1,0 +1,120 @@
+﻿/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+*/
+
+
+/*//Ajout Tarik
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+p {
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #190f33;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #190f33;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bg_header {
+    height: 200px;*/
+    /*background-image:url(https://oscaro.media/mu/layout/home/fallback/fallback_home_L_2020.jpg);*/
+/*}
+
+.image-prinipale {
+    height: 400px;
+    width: 1024px;
+    object-fit: cover;
+}
+
+.header_title {
+    color: #000f;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Verdana;
+}
+
+.main-block {*/
+    /*border: 1px solid black;*/
+    /*width: 1024px;
+    background-color: #F5F4F3;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;*/ /*permets d'afficher le bord arrondi inf�rieur du block main en emp�chant le contenu de d�passer du block*/
+/*}
+
+.navigation {
+    display: flex;
+}
+
+.nav-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;*/
+    /*line-height: 100px;*/ /*place au centre l'�l�ment enfant <a> dans l'�l�ment parent � mi-hauteur sans pr�ciser height*/
+/*}
+
+#navigation {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#line-label-cat {
+    font-weight: bold;
+}
+
+#labelCat {
+    font-weight: bold;
+}*/

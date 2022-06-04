@@ -1,0 +1,88 @@
+﻿@model MANU_AUTO.Models.Tutoriel
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row">
+
+    <div class="col">
+        <h4>Creation de Tutoriel</h4>
+    </div>
+
+    <div class="col me-1">
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div>
+<hr />
+
+
+<div class="row">
+    <div class="col-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Titre" class="control-label"></label>
+                <input asp-for="Titre" class="form-control" />
+                <span asp-validation-for="Titre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dcc" class="control-label"></label>
+                <input asp-for="Dcc" class="form-control" />
+                <span asp-validation-for="Dcc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contenu" class="control-label"></label>
+                <textarea rows="10" cols="60" id="TITLE" placeholder="Résumez en une phrase ou deux ce que le tutoriel accomplit."></textarea>
+                @* <input asp-for="Contenu" class="form-control" />*@
+                <span asp-validation-for="Contenu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoLink" class="control-label"></label>
+                <input asp-for="VideoLink" class="form-control" />
+                <span asp-validation-for="VideoLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dml" class="control-label"></label>
+                <input asp-for="Dml" class="form-control" />
+                <span asp-validation-for="Dml" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-6">
+        <div class="camera">
+                <label for="file-input">
+                    <!-- <img src="https://img.icons8.com/ios-glyphs/30/undefined/camera--v1.png"/>  -->
+                </label>
+                <video id="video" width="600px" height="600px" controls=""></video>
+                <input type="file" id="file-input" name="tutorial" accept="video/*">
+            </div>
+
+    </div>
+
+    @*
+    <form asp-action="Create>
+    <label for="fname">Catégorie</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Exemple : Climatisation, Révision, Turbo, ..."><br>
+    <label for="lname">Titre du tutoriel</label><br>
+    <input type="text" id="lname" name="lname">
+    <br>
+    <label for="description">Description :</label>
+    <br>
+    <textarea rows="5" cols="30" id="TITLE" placeholder="Résumez en une phrase ou deux ce que le tutoriel accomplit."></textarea>
+    </textarea>
+    </script>
+    </form> *@
+
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
