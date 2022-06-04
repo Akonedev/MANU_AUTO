@@ -1,0 +1,52 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@model dynamic
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>User Details</h1>
+
+@*@if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+{*@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+            <th>EmailConfirmed</th>
+            <th>LockoutEnabled</th>
+            <th>LockoutEnd</th>
+            <th>AccessFailedCount</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.userDetail.UserName</td>
+            <td>@Model.userDetail.Email</td>
+            <td>@Model.userDetail.PhoneNumber</td>
+            <td>@Model.userDetail.EmailConfirmed</td>
+            <td>@Model.userDetail.LockoutEnabled</td>
+            <td>@Model.userDetail.LockoutEnd</td>
+            <td>@Model.userDetail.AccessFailedCount</td>
+            <td>
+                @foreach (var item in Model.userRoles)
+                {
+                    <div class="col-1"> @item</div>
+
+                }
+
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@Model.userDetail.Id">Edit</a>
+                <a asp-action="Delete" asp-route-id="@Model.userDetail.Id">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+@*}*@
