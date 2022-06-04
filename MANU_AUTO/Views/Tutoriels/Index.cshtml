@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@*@model IEnumerable<MANU_AUTO.Models.Tutoriel>*@
+@model dynamic
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@*@if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+{*@
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+@*}*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               @* @Html.DisplayNameFor(model => @Model.Tutoriel.Titre)*@
+                Titre
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Dcc)*@
+                Dcc
+            </th>
+            <th>
+               @* @Html.DisplayNameFor(model => @Model.Tutoriel.Contenu)*@
+               Contenu
+            </th>
+            <th>
+              @*  @Html.DisplayNameFor(model => model.VideoLink)*@
+              VideoLink
+            </th>
+            <th>
+               @* @Html.DisplayNameFor(model => model.Dml)*@
+               Dml
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Tutoriel item in @Model.Tutoriel)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dcc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contenu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VideoLink)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dml)
+                </td>
+               @* @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                {*@
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+               @* }*@
+            </tr>
+        }
+    </tbody>
+</table>

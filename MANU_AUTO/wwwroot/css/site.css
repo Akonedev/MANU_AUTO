@@ -1,0 +1,52 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.grid {
+    display: flex;
+}
+
+.img-thumbnail {
+    flex-wrap: wrap;
+    height: 200px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    gap: 20px;
+}
+
+.categoryListCell {
+    /*gap: 20px;*/
+
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.h5 {
+    padding-right: 15px !important;
+}
+
+html {
+    background-color: yellow;
+}
+
+.lead2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+

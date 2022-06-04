@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+
+@model MANU_AUTO.ViewModels.CreateViewModel
+@{
+    ViewData["Title"] = "Edit User";
+
+}
+
+<h1>@ViewData["Title"] </h1>
+
+@*<h4>User</h4>*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<input type="hidden" asp-for="Id" />*@
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span>Password</span>
+                <label for="Password" class="control-label"></label>
+                <input for="Password" name="Password" class="form-control" />
+                <span validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span>Password</span>
+                <label for="Password" class="control-label"></label>
+                <input for="Password" name="Confirm password" class="form-control" />
+                <span validation-for="Password" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+                <h6>Add Role</h6>
+                <select name="RolesToAdd" asp-items=@ViewBag.allRoles>
+                    <option value="">Ajouter un Role de l'utilisateur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

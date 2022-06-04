@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <section  class="pb-3" color=> 
+    <div class="jumbotron">
+            <h1 class="display-4">Do it yourself!</h1>
+            <p class="lead">Bienvenu dans LaManuAuto®, le site de référence pour dépanner ça voiture. Retrouvez nos forums quotidiennement mis à jour </p>
+            <hr class="my-4">
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h4>Inscrivez-vous pour accéder à la totalité de notre contenu</h4>
+            <div class="row">
+            <div class="col">
+            <p class="col">
+            <a class="btn btn-warning btn-lg" asp-area="Identity" asp-page="/Account/Register">S'inscrire</a>
+            </p>
+            </div>
+            <div class="col">
+            <p class="col">
+            <a class="btn btn-warning btn-lg" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </p>
+            </div>
+            </div>
+            </div>
+    </div>
+        </section>
+    </div> 
+
+
+    <h2 id="Section_45_catégories" class="js-dynamic-toc-section">
+        Explorer les catégories                                                         
+     </h2>
+@*     <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"/>
+     <input name='tags' value='PHP ,Laravel' class="form-control" autofocus>
+*@
+     <div class="grid">
+                     <div class="categoryListCell">
+                     <a href="/categorie/Révision" class="categoryAnchor">
+                        <img src="https://blog.ouiglass.com/wp-content/uploads/2020/10/R%C3%A9vision-automobile-1024x682.jpg" width="179" height="143" alt="RENAULT" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Révision                                                   </h5>
+                     </a>
+                                       </div>
+                                                   <div class="categoryListCell">
+                     <a href="/categorie/Moteur" class="categoryAnchor">
+                        <img src="https://recycl-auto-60.fr/wp-content/uploads/p/1/1/7/9/8/11798-Moteur-Citroen-Xsara-Picasso-2L-HDI-90.jpg" width="179" height="143" alt="VOLKSWAGEN" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Moteur                                                   </h5>
+                     </a>
+                                       </div>
+                                                   <div class="categoryListCell">
+                     <a href="/categorie/Pneus" class="categoryAnchor">
+                        <img src="https://www.cdiscount.com/pdt2/5/4/2/1/300x300/mic3528705498542/rw/michelin-195/65r15-.jpg" width="179" height="143" alt="PEUGEOT" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Pneus                                                   </h5>
+                     </a>
+                                       </div>
+                                                   <div class="categoryListCell">
+                     <a href="/categorie/Distribution" class="categoryAnchor">
+                        <img src="https://images.squarespace-cdn.com/content/v1/53eb7bc8e4b0d09d9ab8f533/1409918428990-H3FFLXJUWIF12D441VIR/image-asset.jpeg?format=500w" width="179" height="143" alt="CITROEN" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Distribution                                                   </h5>
+                     </a>
+                                       </div>
+                                                   <div class="categoryListCell">
+                     <a href="/categorie/Electronique" class="categoryAnchor">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR19HtVhN6A7GMuwcYHrU50ogmx1zZc_7G-cA&usqp=CAU" width="179" height="143" alt="BMW" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Electronique                                                   </h5>
+                     </a>
+                                       </div>
+                                                   <div class="categoryListCell">
+                     <a href="/categorie/Carrosserie" class="categoryAnchor">
+                        <img src="https://images.ad.fr/1/image/Carroserie_1.jpg" width="179" height="143" alt="AUDI" style="object-fit:cover;" class="img-thumbnail">
+                        <h5 class="title btn btn-info">
+                                                         Carrosserie                                                   </h5>
+                     </a>
+                                       </div>
+                           </div>
