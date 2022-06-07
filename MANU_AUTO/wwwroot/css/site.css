@@ -19,7 +19,7 @@ body {
 */
 
 
-//Ajout Tarik
+/*Ajout Tarik*/
 html {
     font-size: 14px;
 }
@@ -61,6 +61,10 @@ h4 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .bg_header {
@@ -117,4 +121,62 @@ h4 {
 
 #labelCat {
     font-weight: bold;
+}
+
+.titleEditCat{
+    text-align:center;
+}
+
+.titleEditCat span {
+    font-style:italic;
+}
+
+.editCatetegorie {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1024px;
+    background-image: url("https://oscaro.media/mu/layout/header/categories.jpg");
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#editLabel {
+    font-weight: bold;
+}
+
+#editinputLabel {
+    align-content:center;
+    margin-top:10px;
+}
+
+#editBtn {
+
+}
+
+.editLink {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+#line2 {
+    display:flex;
+}
+
+.detailsCatetegorie {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 1024px;
+    height:150px;
+    background-image: url("https://oscaro.media/mu/layout/header/categories.jpg");
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.titleDetailsCat {
+    text-align: center;
 }

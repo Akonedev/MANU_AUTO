@@ -1,24 +1,23 @@
 ﻿@model MANU_AUTO.Models.Categorie
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Détails catégorie";
 }
 
-<h1>Détails de la catégorie</h1>
+<h3 class="titleDetailsCat">Détails de la catégorie</h3>
+
+<div class="detailsCatetegorie">
+
+        <div class = "col-md-6-box">
+            @Html.DisplayNameFor(model => model.Label)
+        </div>
+        <div class = "col-md-6-box">
+            @Html.DisplayFor(model => model.Label)
+        </div>
+
+</div>
 
 <div>
-    <h4>Categorie</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Label)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Label)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Modifier</a> |
+    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model?.Id">Modifier</a>
     <a asp-action="Index">Liste des catégories</a>
 </div>
